@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>온누리 프리미엄 실버 타운</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Noto Sans KR", sans-serif;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const header = document.querySelector("header");
+        const onScroll = () => {
+          if (window.scrollY > 24) {
+            header.classList.add(
+              "bg-white/75",
+              "backdrop-blur",
+              "shadow-sm"
+            );
+          } else {
+            header.classList.remove(
+              "bg-white/75",
+              "backdrop-blur",
+              "shadow-sm"
+            );
+          }
+        };
+        onScroll();
+        window.addEventListener("scroll", onScroll);
+      });
+    </script>
+  </head>
+  <body class="bg-white text-[#585147] antialiased">
+    <header class="fixed top-0 left-0 right-0 z-50 transition duration-300">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
+        <span class="text-lg font-semibold tracking-[0.3em] text-[#3A5A40]">
+          ONNURI
+        </span>
+        <nav class="hidden items-center gap-10 text-sm uppercase tracking-[0.25em] md:flex">
+          <a class="hover:text-[#3A5A40]" href="#story">브랜드</a>
+          <a class="hover:text-[#3A5A40]" href="#services">서비스</a>
+          <a class="hover:text-[#3A5A40]" href="#spaces">공간</a>
+          <a class="hover:text-[#3A5A40]" href="#contact">상담</a>
+        </nav>
+        <button
+          class="rounded-full border border-[#3A5A40] px-6 py-2 text-xs uppercase tracking-[0.3em] text-[#3A5A40]"
+        >
+          상담 예약
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="relative min-h-[85vh] overflow-hidden pt-24">
+        <img
+          src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=2000&q=90"
+          alt="숲의 고요함"
+          class="absolute inset-0 h-full w-full object-cover"
+        />
+        <div class="absolute inset-0 bg-[#3A5A40]/40"></div>
+        <div class="relative z-10 mx-auto flex min-h-[85vh] max-w-6xl items-center px-6 text-center">
+          <div class="mx-auto max-w-3xl text-white">
+            <p class="text-xs uppercase tracking-[0.4em] text-white/80">
+              Onnuri Premium Silver Town
+            </p>
+            <h1 class="mt-8 text-4xl font-light md:text-6xl">
+              자연이 머무는 곳, 온누리
+            </h1>
+            <p class="mt-6 text-sm text-white/80 md:text-base">
+              깊은 숲의 숨결과 정제된 럭셔리 감성으로 완성된 프리미엄 실버 타운
+            </p>
+            <button
+              class="mt-10 rounded-full border border-white/60 px-8 py-3 text-xs uppercase tracking-[0.4em]"
+            >
+              자세히 보기
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="story" class="bg-[#F9F8F6] py-32">
+        <div class="mx-auto grid max-w-6xl gap-16 px-6 lg:grid-cols-[1.1fr_0.9fr]">
+          <div>
+            <p class="text-xs uppercase tracking-[0.4em] text-[#3A5A40]/70">
+              Philosophy
+            </p>
+            <h2 class="mt-6 text-3xl font-light text-[#3A5A40] md:text-5xl">
+              절제된 여백 속에서 완성되는
+              <span class="block font-bold text-[#3A5A40]">
+                프리미엄 케어의 경험
+              </span>
+            </h2>
+            <p class="mt-8 text-lg text-[#585147]/80">
+              온누리는 호텔 이상의 섬세함과 자연의 여유를 결합해, 삶의 마지막
+              장을 품격 있게 설계합니다. 공간부터 서비스까지, 모든 순간이 고요한
+              안정감을 선사합니다.
+            </p>
+            <div class="mt-10 grid gap-6 sm:grid-cols-2">
+              <div class="rounded-3xl bg-white p-10 shadow-xl">
+                <p class="text-xs uppercase tracking-[0.3em] text-[#3A5A40]/70">
+                  Legacy
+                </p>
+                <p class="mt-4 text-3xl font-bold text-[#3A5A40]">18년</p>
+                <p class="mt-2 text-sm text-[#585147]/70">
+                  전문 케어 노하우
+                </p>
+              </div>
+              <div class="rounded-3xl bg-white p-10 shadow-xl">
+                <p class="text-xs uppercase tracking-[0.3em] text-[#3A5A40]/70">
+                  Serenity
+                </p>
+                <p class="mt-4 text-3xl font-bold text-[#3A5A40]">365일</p>
+                <p class="mt-2 text-sm text-[#585147]/70">
+                  자연과 함께하는 휴식
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-3xl bg-white p-10 shadow-xl">
+            <p class="text-xs uppercase tracking-[0.3em] text-[#3A5A40]/70">
+              Signature Care
+            </p>
+            <h3 class="mt-4 text-2xl font-bold text-[#3A5A40]">
+              맞춤형 프라이빗 케어
+            </h3>
+            <p class="mt-6 text-sm text-[#585147]/70">
+              개인 건강 데이터와 라이프 스타일에 맞춘 전담 케어 플랜을 제공합니다.
+            </p>
+            <div class="mt-8 space-y-4 text-sm text-[#585147]/80">
+              <div class="flex items-center gap-4">
+                <span
+                  class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#F9F8F6] text-lg text-[#3A5A40]"
+                >
+                  ✦
+                </span>
+                <p>전문 간호사의 24시간 모니터링</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <span
+                  class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#F9F8F6] text-lg text-[#3A5A40]"
+                >
+                  ✦
+                </span>
+                <p>프라이빗 재활 및 웰니스 프로그램</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <span
+                  class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#F9F8F6] text-lg text-[#3A5A40]"
+                >
+                  ✦
+                </span>
+                <p>자연 채광을 담은 휴식 공간 제공</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="py-32">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p class="text-xs uppercase tracking-[0.4em] text-[#3A5A40]/70">
+                Services
+              </p>
+              <h2 class="mt-4 text-3xl font-light text-[#3A5A40] md:text-5xl">
+                일상의 모든 순간을 위한
+                <span class="block font-bold">프리미엄 서비스</span>
+              </h2>
+            </div>
+            <p class="max-w-md text-sm text-[#585147]/70">
+              표 대신 섬세한 아이콘과 텍스트로 구성된 그리드로, 감각적인 정보
+              전달을 완성합니다.
+            </p>
+          </div>
+          <div class="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div class="rounded-3xl bg-white p-10 shadow-xl">
+              <div class="flex items-center gap-4">
+                <span
+                  class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#F9F8F6] text-lg text-[#3A5A40]"
+                >
+                  ✶
+                </span>
+                <h3 class="text-lg font-bold text-[#3A5A40]">웰니스 클리닉</h3>
+              </div>
+              <p class="mt-4 text-sm text-[#585147]/70">
+                의료진의 정기 진료와 프라이빗 케어가 결합된 프리미엄 클리닉.
+              </p>
+            </div>
+            <div class="rounded-3xl bg-white p-10 shadow-xl">
+              <div class="flex items-center gap-4">
+                <span
+                  class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#F9F8F6] text-lg text-[#3A5A40]"
+                >
+                  ✶
+                </span>
+                <h3 class="text-lg font-bold text-[#3A5A40]">컨시어지 케어</h3>
+              </div>
+              <p class="mt-4 text-sm text-[#585147]/70">
+                라이프스타일 매니저가 일상을 케어하고 필요한 순간을 제공합니다.
+              </p>
+            </div>
+            <div class="rounded-3xl bg-white p-10 shadow-xl">
+              <div class="flex items-center gap-4">
+                <span
+                  class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#F9F8F6] text-lg text-[#3A5A40]"
+                >
+                  ✶
+                </span>
+                <h3 class="text-lg font-bold text-[#3A5A40]">시그니처 다이닝</h3>
+              </div>
+              <p class="mt-4 text-sm text-[#585147]/70">
+                영양을 고려한 미식 경험으로 식사의 품격을 한층 높입니다.
+              </p>
+            </div>
+            <div class="rounded-3xl bg-white p-10 shadow-xl">
+              <div class="flex items-center gap-4">
+                <span
+                  class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#F9F8F6] text-lg text-[#3A5A40]"
+                >
+                  ✶
+                </span>
+                <h3 class="text-lg font-bold text-[#3A5A40]">아트 & 테라피</h3>
+              </div>
+              <p class="mt-4 text-sm text-[#585147]/70">
+                예술과 치유가 결합된 프로그램으로 심리적 안정감을 선사합니다.
+              </p>
+            </div>
+            <div class="rounded-3xl bg-white p-10 shadow-xl">
+              <div class="flex items-center gap-4">
+                <span
+                  class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#F9F8F6] text-lg text-[#3A5A40]"
+                >
+                  ✶
+                </span>
+                <h3 class="text-lg font-bold text-[#3A5A40]">프라이빗 산책로</h3>
+              </div>
+              <p class="mt-4 text-sm text-[#585147]/70">
+                자연 속 산책로로 매일 아침 산책과 명상 루틴을 제공합니다.
+              </p>
+            </div>
+            <div class="rounded-3xl bg-white p-10 shadow-xl">
+              <div class="flex items-center gap-4">
+                <span
+                  class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#F9F8F6] text-lg text-[#3A5A40]"
+                >
+                  ✶
+                </span>
+                <h3 class="text-lg font-bold text-[#3A5A40]">패밀리 라운지</h3>
+              </div>
+              <p class="mt-4 text-sm text-[#585147]/70">
+                가족과의 프라이빗 시간을 위한 라운지를 제공합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="spaces" class="bg-[#F9F8F6] py-32">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p class="text-xs uppercase tracking-[0.4em] text-[#3A5A40]/70">
+                Spaces
+              </p>
+              <h2 class="mt-4 text-3xl font-light text-[#3A5A40] md:text-5xl">
+                자연과 공간이 조화로운
+                <span class="block font-bold">온누리의 일상</span>
+              </h2>
+            </div>
+            <p class="max-w-md text-sm text-[#585147]/70">
+              고요한 숲과 자연광이 스며드는 공간을 고화질 이미지로 담았습니다.
+            </p>
+          </div>
+          <div class="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <img
+              class="h-64 w-full rounded-2xl object-cover shadow-xl"
+              src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=90"
+              alt="프리미엄 거실"
+            />
+            <img
+              class="h-64 w-full rounded-2xl object-cover shadow-xl"
+              src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=90"
+              alt="프리미엄 라운지"
+            />
+            <img
+              class="h-64 w-full rounded-2xl object-cover shadow-xl"
+              src="https://images.unsplash.com/photo-1502005097973-6a7082348e28?auto=format&fit=crop&w=1200&q=90"
+              alt="프리미엄 스위트"
+            />
+            <img
+              class="h-64 w-full rounded-2xl object-cover shadow-xl"
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=90"
+              alt="숲의 풍경"
+            />
+            <img
+              class="h-64 w-full rounded-2xl object-cover shadow-xl"
+              src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=90"
+              alt="프리미엄 침실"
+            />
+            <img
+              class="h-64 w-full rounded-2xl object-cover shadow-xl"
+              src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=90"
+              alt="휴식 공간"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="py-32">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="text-center">
+            <p class="text-xs uppercase tracking-[0.4em] text-[#3A5A40]/70">
+              Admission
+            </p>
+            <h2 class="mt-4 text-3xl font-light text-[#3A5A40] md:text-5xl">
+              입소 절차
+              <span class="block font-bold">섬세하게 이어지는 여정</span>
+            </h2>
+            <p class="mt-4 text-sm text-[#585147]/70">
+              문의부터 입소까지, 모든 과정은 전담 매니저가 동행합니다.
+            </p>
+          </div>
+          <div class="mt-12 grid gap-6 md:grid-cols-3 lg:grid-cols-6">
+            <div class="rounded-3xl bg-white p-8 text-center shadow-xl">
+              <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#F9F8F6] text-xl text-[#3A5A40]">
+                01
+              </div>
+              <p class="mt-6 text-sm font-semibold text-[#3A5A40]">전화 문의</p>
+            </div>
+            <div class="rounded-3xl bg-white p-8 text-center shadow-xl">
+              <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#F9F8F6] text-xl text-[#3A5A40]">
+                02
+              </div>
+              <p class="mt-6 text-sm font-semibold text-[#3A5A40]">입소 상담</p>
+            </div>
+            <div class="rounded-3xl bg-white p-8 text-center shadow-xl">
+              <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#F9F8F6] text-xl text-[#3A5A40]">
+                03
+              </div>
+              <p class="mt-6 text-sm font-semibold text-[#3A5A40]">입소 결정</p>
+            </div>
+            <div class="rounded-3xl bg-white p-8 text-center shadow-xl">
+              <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#F9F8F6] text-xl text-[#3A5A40]">
+                04
+              </div>
+              <p class="mt-6 text-sm font-semibold text-[#3A5A40]">서류 준비</p>
+            </div>
+            <div class="rounded-3xl bg-white p-8 text-center shadow-xl">
+              <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#F9F8F6] text-xl text-[#3A5A40]">
+                05
+              </div>
+              <p class="mt-6 text-sm font-semibold text-[#3A5A40]">입소 계약</p>
+            </div>
+            <div class="rounded-3xl bg-white p-8 text-center shadow-xl">
+              <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#F9F8F6] text-xl text-[#3A5A40]">
+                06
+              </div>
+              <p class="mt-6 text-sm font-semibold text-[#3A5A40]">입소</p>
+            </div>
+          </div>
+          <div class="mt-16 grid gap-6 lg:grid-cols-2">
+            <div class="rounded-3xl bg-white p-10 shadow-xl">
+              <h3 class="text-xl font-bold text-[#3A5A40]">입소 서류</h3>
+              <ul class="mt-6 space-y-3 text-sm text-[#585147]/80">
+                <li>장기요양인정서</li>
+                <li>표준 이용계획서</li>
+                <li>건강진단서 및 처방전</li>
+                <li>주민등록등본, 가족관계증명서</li>
+                <li>도장 및 신분증(보호자 포함)</li>
+              </ul>
+            </div>
+            <div class="rounded-3xl bg-white p-10 shadow-xl">
+              <h3 class="text-xl font-bold text-[#3A5A40]">구비 준비물</h3>
+              <ul class="mt-6 space-y-3 text-sm text-[#585147]/80">
+                <li>개인 의복, 실내화, 위생 용품</li>
+                <li>복용 약품 및 개인 의료기기</li>
+                <li>개인 애장품(사진, 책 등)</li>
+                <li>입소 비용 관련 안내는 상담 시 제공</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-32">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="rounded-3xl bg-[#3A5A40] p-12 text-white shadow-xl lg:p-16">
+            <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+              <div>
+                <p class="text-xs uppercase tracking-[0.4em] text-white/70">
+                  Consultation
+                </p>
+                <h2 class="mt-4 text-3xl font-light md:text-5xl">
+                  완벽히 정제된 삶,<br />
+                  지금 상담하세요
+                </h2>
+                <p class="mt-6 text-sm text-white/80">
+                  섬세한 상담을 통해 어르신에게 가장 어울리는 프리미엄 케어 플랜을
+                  제안합니다.
+                </p>
+                <div class="mt-8 space-y-3 text-sm text-white/80">
+                  <p>문의 전화: 02-123-4567</p>
+                  <p>운영 시간: 매일 09:00 - 20:00</p>
+                  <p>위치: 서울 특별시 숲길로 27 온누리 실버 타운</p>
+                </div>
+              </div>
+              <div class="rounded-3xl bg-white p-10 text-[#585147] shadow-xl">
+                <p class="text-xs uppercase tracking-[0.3em] text-[#3A5A40]/70">
+                  Private Booking
+                </p>
+                <h3 class="mt-4 text-2xl font-bold text-[#3A5A40]">
+                  프라이빗 상담 예약
+                </h3>
+                <div class="mt-6 space-y-4 text-sm text-[#585147]/80">
+                  <div class="rounded-2xl bg-[#F9F8F6] px-4 py-3">
+                    성함
+                  </div>
+                  <div class="rounded-2xl bg-[#F9F8F6] px-4 py-3">
+                    연락처
+                  </div>
+                  <div class="rounded-2xl bg-[#F9F8F6] px-4 py-3">
+                    문의 내용
+                  </div>
+                  <button
+                    class="mt-2 w-full rounded-full bg-[#3A5A40] px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white"
+                  >
+                    상담 신청하기
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="relative overflow-hidden bg-[#F9F8F6] py-20">
+      <img
+        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85"
+        alt="숲의 저녁 풍경"
+        class="absolute inset-0 h-full w-full object-cover opacity-20"
+      />
+      <div class="relative mx-auto max-w-6xl px-6 text-center text-xs uppercase tracking-[0.3em] text-[#585147]/70">
+        <p>온누리 프리미엄 실버 타운</p>
+        <p class="mt-4">© 2024 Onnuri Premium Silver Town.</p>
+      </div>
+    </footer>
+  </body>
+</html>
